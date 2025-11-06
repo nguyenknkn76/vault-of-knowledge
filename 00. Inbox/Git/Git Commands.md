@@ -6,6 +6,7 @@
 - clone 
 - checkout 
 - push code to server 
+
 ```bash
 git add .
 git commit -m "<type>[optional scope]: <description>"
