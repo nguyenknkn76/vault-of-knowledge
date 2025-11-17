@@ -3,8 +3,9 @@
 ## What is container? Why use Docker?
 
 - version
-- case: load balancer -> install application in multiple server
+- case:  load balancer -> install application in multiple server
 - build image -> push to registry 
+![[assets/Docker/file-20251116000524158.png]]
 ## Docker Architecture 
 
 ![[assets/Docker/file-20251115234904125.png]]
