@@ -1,4 +1,9 @@
-## General
+---
+tags:
+  - "#obsidian"
+  - "#utils"
+---
+## 1. General
 ### Principle `local first`
 
 ### Core Concepts
@@ -10,7 +15,8 @@
 	- Global Graph
 	- Local Graph
 
-### Hybrid PKM Framework
+### Hybrid Private Knowledge Base (PKB) Framework
+
 1. PARA and Zettelkasten 
 	- **Zettelkasten**: atomic notes + bi-directional linking
 	- **PARA** (Project, Area, Resources, Archive) 
@@ -36,8 +42,9 @@
 > [!bug] this is bug
 
 
-## Tech Content Design 
+## 2. Tech Content Design 
 ### Naming convention
+
 1. Tags (Note Type)
 ```
 #type/runbook
@@ -48,11 +55,13 @@
 3. Map of Content (MOCs)
 
 ### The Knowledge Base Triad
+
 1.  Conceptual Note (atomic)
 2.  Snippet Note (Script/Code)
-3.  Runbook/Troubleshooting Note
+3.  Runbooks/Troubleshooting Note
 
 ### Automate with **Templater** and Metadata
+
 - Templater Plugin: embedded var and func and execute js into note 
 	-> automate by using Moment.js via Templater
 - Metadata (Properties): YAML Frontmatter of each notes -
@@ -62,7 +71,9 @@
 	- environment
 	- version
 	- status
+
 ### Mermaid diagrams
+
 ```mermaid
 graph LR
     A --> B(Process);
@@ -71,11 +82,12 @@ graph LR
     C -- No --> B;
 ```
 
-## Plugin + Project management 
-### Dataview
-### Kanban
-### Git
-### Digital Garden
+## 3. Plugin + Project management 
+
+- Dataview
+- Kanban
+- Git
+- Digital Garden
 
 ```mermaid
 graph TD
@@ -95,6 +107,7 @@ graph TD
     D --> D1[[Python MOC]];
     D --> D2[[Go MOC]];
 ```
+
 
 
 
