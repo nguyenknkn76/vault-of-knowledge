@@ -5,6 +5,8 @@ tags:
   - aws/ec2
   - aws/vpc
 ---
+![[assets/Setup Privates and Public EC2 Instances (Basic)/file-20251121142825095.png]]
+
 ## 0. Resources 
 
 | No. | Resource         | Name                  | IP            | Note                      |
@@ -27,7 +29,6 @@ tags:
 | 08  | NAT Gateway      | dop10-nat-private     |               | private access internet   |
 | 09  | Elastic IP       |                       |               | if NOT assign public ip   |
 | 10  | Open VPN         | dop10-vpn-openvpn-ec2 |               |                           |
-![[assets/Setup Privates and Public EC2 Instances (Basic)/file-20251121142825095.png]]
 
 ## 1. Create VPC & Subnet
 

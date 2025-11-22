@@ -78,7 +78,7 @@ ENTRYPOINT
 - tools to scan image
 - multi stages
 
-### Example: Dockerfile for Backend Java Project
+### Example:  Dockerfile for Backend Java Project
 
 **multi stage**
 ```Dockerfile
