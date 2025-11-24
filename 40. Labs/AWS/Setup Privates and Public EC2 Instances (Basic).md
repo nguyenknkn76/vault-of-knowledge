@@ -68,6 +68,8 @@ tags:
 	- Connectivity type: public
 	- Elastic IP: `Allocate Elastic IP`
 
+> [!note]
+> - Private Instances must have NAT Gateway to install needed dependencies from internet
 ### Elastic IPs
 
 1. Create Elastic IP (fixed public IP to config domain)
@@ -161,7 +163,7 @@ ping <dop10-private-ec2 private-IP>
 ```bash 
 # ur local device
 # copy key pair to public instances
-scp -i dop10-ec2-private-kp.pem ubuntu@3.35.50.243:/home/ubuntu/key-pair
+scp -i dop10-ec2-private-kp.pem dop10-ec2-private-kp.pem ubuntu@3.35.50.243:/home/ubuntu/key-pair
 # sus method: cat keypair content and copy manualy.
 
 ls -la 
