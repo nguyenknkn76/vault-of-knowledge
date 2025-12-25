@@ -210,7 +210,6 @@ kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.28.3/
 kubectl get pods -n kube-system
 ```
 
-
 #### 3.6. Join Worker Nodes
 
 **ON ALL WORKER NODES**

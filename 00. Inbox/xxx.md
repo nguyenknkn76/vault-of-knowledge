@@ -4,3 +4,5 @@ Protect Backend API:
 - Rate limit
 - Authentication: OAuth2, JWT
 - Authorization
+
+Database: index, Incremental
