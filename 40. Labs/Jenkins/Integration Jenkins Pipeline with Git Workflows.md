@@ -1,3 +1,11 @@
+---
+tags:
+  - jenkins
+  - cicd
+  - cicd/jenkins
+  - git
+---
+
 ### Phase 1: Infrastructure Setup (EC2 & Security)
 
 First, we'll create the two EC2 instances and configure their security groups to allow them to communicate.
@@ -168,7 +176,9 @@ Now, we'll configure the second EC2 instance to act as a build agent where Docke
         ```
     *   Go back to the Jenkins **Nodes** page. You should see `docker-agent-1` is now connected.
 
-    **(Best Practice)** For a production setup, you would run the agent as a `systemd` service so it starts automatically on boot.
+
+> [!tip] Best Practice 
+> - For a production setup, you would run the agent as a `systemd` service so it starts automatically on boot.
 
 ---
 

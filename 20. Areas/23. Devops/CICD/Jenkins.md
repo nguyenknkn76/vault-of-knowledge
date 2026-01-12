@@ -97,3 +97,11 @@ Step 3: Build & Push Docker Image
 4. Choose exact self_hosted_agent_name in groovy code.
 
 ## Host
+
+
+> [! tip] Auto Connect and Start Jenkins Master and Worker Nodes Services 
+> - Both of EC2 and On-prem
+> 	- master: docker-compose
+> 	- nodes: config script `user data` (Key word: `EC2 userdata`)
+
+![[assets/Jenkins/file-20260110164555249.png]]

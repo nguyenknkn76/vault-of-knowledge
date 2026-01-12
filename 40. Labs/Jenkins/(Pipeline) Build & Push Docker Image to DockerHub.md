@@ -1,3 +1,12 @@
+---
+tags:
+  - jenkins
+  - cicd
+  - cicd/jenkins
+  - docker
+  - git
+---
+
 ```groovy
 pipeline {
 	// 1. Select the agent with the 'docker' and 'linux' labels

@@ -149,7 +149,6 @@ GitHub Repository > Settings > Webhooks > `Add WebHook`
 ## 04. 
 
 
-
 ```groovy
 pipeline {
     agent { label 'self_hosted_agent' }

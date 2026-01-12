@@ -4,7 +4,6 @@ Master -Slave
 Rules:
 
 Quality Profiles:
-- 
 
 Quality Gates:
 - Coverage (for Unit Test)
@@ -21,3 +20,4 @@ Quality Gates:
 |         |           | Activate       |          |          |
 |         |           | Down Serverity |          |          |
 |         |           | Up Serverity   |          |          |
+

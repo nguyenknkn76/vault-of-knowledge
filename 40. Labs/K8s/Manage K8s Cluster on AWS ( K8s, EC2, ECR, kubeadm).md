@@ -223,4 +223,3 @@ kubectl get nodes
 # All Nodes should transition to the "Ready" status
 ```
 
-
