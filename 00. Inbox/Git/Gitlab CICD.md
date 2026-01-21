@@ -171,8 +171,6 @@ deploy
 		- tags 
 # commit msg
 # "config(pipeline): ... description ... "
-```
 
 purpose of manual: deploy to higher environment -> your source have be scan by clean code tools, check security tools and someone approve. 
  -> config: who can run this pipeline (using this condition `$GITLAB_USER_LOGIN` and `$GITLAB_USER_ID`)
-

@@ -52,6 +52,45 @@ jobs:
 					  -Dsonar.sources=.
 ```
 
+> [!bug] java.io.IOException: No space left on device
+> - Reason: SonarScanner try to write report file (`activerules.pb`) to temp folder `.scannerwork` but **hard disk of ubuntu server is full**.
+> 
+```bash
+# in self hosted runner 
+df -h
+rm -rf /home/ubuntu/actions-runner/_work/*
+docker system prune -a --volumes -f
+sudo journalctl --vacuum-time=1d 
+```
+
+> [!note] Config Auto Clean in Workflows
+```yml
+- name: Clean up previous builds 
+  run: | 
+	  echo "Cleaning up workspace..." 
+	  rm -rf ${{ github.workspace }}/*
+
+
+- name: Free Disk Space (Ubuntu)
+  uses: jlumbroso/free-disk-space@main
+  with:
+    # Optimize: delete unused components to free ~20-30GB memory
+    tool-cache: true
+    android: true
+    dotnet: true
+    haskell: true
+    large-packages: true
+    docker-images: true
+    swap-storage: true
+
+- name: Free Disk Space 
+  run: | 
+	  sudo rm -rf /usr/share/dotnet 
+	  sudo rm -rf /usr/local/lib/android 
+	  sudo rm -rf /opt/ghc 
+	  sudo docker image prune -af 
+	  df -h
+```
 ## References
 
 [Integrate SonarQube in GitHub Actions](https://medium.com/@s.mehrotrasahil/integrate-sonarqube-in-github-actions-d89eafc7fd69)
